@@ -27,13 +27,13 @@ p{
 .f-right{
    float: right;
 }
-.clearFix::before{
+.clearFix::after{
    content: '';
    display: table;
    clear: both;
 }
 .container{
-   max-width: 1320px;
+   max-width: 1520px;
    margin: auto;
 }
 /* Start Here */
@@ -41,7 +41,7 @@ p{
    background-image: url(image/top-banner.png);
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 100px 0;
+   padding: 100px 0 0;
 }
 .hero-text h1{
    font-size: 50px;
@@ -70,13 +70,13 @@ p{
 }
 
 .circle-shape {
-   width: 130px;
-   height: 130px;
+   width: 140px;
+   height: 140px;
    background: linear-gradient(111deg, rgba(30,204,218,1) 31%, rgba(57,153,246,1) 58%);
    border-radius: 50%;
    position: relative;
    top: -135px;
-   left: 410px;
+   left: 483px;
 }
 .circle-shape-about {
    width: 130px;
@@ -84,16 +84,20 @@ p{
    background: linear-gradient(90deg, rgba(87,101,222,1) 50%, rgba(122,52,216,1) 90%);
    border-radius: 50%;
    position: relative;
-   top: -125px;
-   left: 80px;
+   top: -137px;
+   left: 97px;
 }
-
+.about-area{
+   background-image: url(image/dream-bg.png);
+   background-repeat: no-repeat;
+   background-position: right;
+}
 .about-text h2 {
    font-size: 40px;
    font-weight: 600;
    line-height: 50px;
    margin-bottom: 25px;
-   margin-top: 120px;
+   margin-top: 140px;
 }
 .about-text h3{
    font-size: 20px;
@@ -104,4 +108,57 @@ p{
 .about-text p{
    color: dimgray;
    margin-bottom: 20px;
+}
+.section-title{
+   font-size: 48px;
+   margin-bottom: 40px;
+   font-weight: 600;
+}
+/* Experience */
+.experience-area{
+   background-image:url(image/exp-bg.png);
+   background-repeat: no-repeat;
+   background-position:left 150px;
+   padding-bottom: 100px;
+}
+.ex{
+   box-shadow: 1px 1px 50px -20px rgba(0,0,0,0.75);
+   padding: 30px;
+}
+.ex h2{
+   font-size: 40px;
+   color: #333;
+   margin-bottom: 20px;
+}
+.ex h4{
+   font-size: 20px;
+   color: orange;
+   margin-bottom: 10px;
+}
+.ex p{
+   color:dimgray;
+}
+.ex-1{
+   border:solid;
+   border-image-source: linear-gradient(lightsalmon, tomato);
+   border-image-slice: 0 0 0 5;
+   border-image-width: 5px;
+}
+.ex-2{
+   border:solid;
+   border-image-source: linear-gradient(blue, cyan);
+   border-image-slice: 0 0 0 5;
+   border-image-width: 5px;
+}
+
+.footer-area{
+   text-align: center;
+}
+.footer-area p{
+   color: dimgray;
+   padding: 20px;
+   background-color: rgb(246, 240, 240);
+}
+.footer-area p a{
+   color: #F87E63;
 }
